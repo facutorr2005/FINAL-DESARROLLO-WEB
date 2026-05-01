@@ -40,4 +40,5 @@
 ## 4. Actor: Administrador (Administrador)
 
 * Como **Administrador**, quiero ingresar al panel de control total, para supervisar el funcionamiento integral del sistema.
+* Como **Administrador**, quiero poder asignar las listas a los distintos vendedores, para evitar conflictos sobre quien maneja cada cliente.
 * Como **Administrador**, quiero poder crear, editar o dar de baja cuentas de Staff (Vendedores y Personal de Secretaría), para gestionar el equipo de trabajo del local.
