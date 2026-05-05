@@ -26,6 +26,7 @@
 * Como **Vendedor**, quiero ingresar al panel de gestión con mis credenciales asignadas, para acceder a la administración de pedidos.
 * Como **Vendedor**, quiero poder modificar el estado de las listas (Pendiente, En Proceso, Finalizada), para mantener organizada la atención a los clientes.
 * Como **Vendedor**, quiero acceder al detalle de cada lista, para conocer los productos solicitados y los datos de contacto (CUIL, Teléfono) del cliente.
+* Como **Vendedor**, quiero que mientras esté trabajando sobre una lista, otro vendedor no pueda acceder al mismo tiempo a esta, para evitar superposición de trabajo.
 
 ---
 
@@ -40,5 +41,4 @@
 ## 4. Actor: Administrador (Administrador)
 
 * Como **Administrador**, quiero ingresar al panel de control total, para supervisar el funcionamiento integral del sistema.
-* Como **Administrador**, quiero poder asignar las listas a los distintos vendedores, para evitar conflictos sobre quien maneja cada cliente.
 * Como **Administrador**, quiero poder crear, editar o dar de baja cuentas de Staff (Vendedores y Personal de Secretaría), para gestionar el equipo de trabajo del local.
