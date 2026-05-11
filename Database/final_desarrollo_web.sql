@@ -125,10 +125,10 @@ CREATE TABLE `listas` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `perfiles_usuarios`
+-- Estructura de tabla para la tabla `detalle_usuarios`
 --
 
-CREATE TABLE `perfiles_usuarios` (
+CREATE TABLE `detalle_usuarios` (
   `id` int(11) NOT NULL,
   `id_usuario` int(11) NOT NULL,
   `nombre` varchar(100) DEFAULT NULL,
@@ -262,9 +262,9 @@ ALTER TABLE `listas`
   ADD KEY `fk_listas_estados_lista` (`id_estado_lista`);
 
 --
--- Indices de la tabla `perfiles_usuarios`
+-- Indices de la tabla `detalle_usuarios`
 --
-ALTER TABLE `perfiles_usuarios`
+ALTER TABLE `detalle_usuarios`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `id_usuario` (`id_usuario`),
   ADD UNIQUE KEY `correo_electronico` (`correo_electronico`);
@@ -342,9 +342,9 @@ ALTER TABLE `listas`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT de la tabla `perfiles_usuarios`
+-- AUTO_INCREMENT de la tabla `detalle_usuarios`
 --
-ALTER TABLE `perfiles_usuarios`
+ALTER TABLE `detalle_usuarios`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
@@ -392,10 +392,10 @@ ALTER TABLE `listas`
   ADD CONSTRAINT `fk_listas_usuarios_vendedor` FOREIGN KEY (`id_vendedor_final`) REFERENCES `usuarios` (`id`);
 
 --
--- Filtros para la tabla `perfiles_usuarios`
+-- Filtros para la tabla `detalle_usuarios`
 --
-ALTER TABLE `perfiles_usuarios`
-  ADD CONSTRAINT `fk_perfiles_usuarios_usuarios` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id`) ON DELETE CASCADE;
+ALTER TABLE `detalle_usuarios`
+  ADD CONSTRAINT `fk_detalle_usuarios_usuarios` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id`) ON DELETE CASCADE;
 
 --
 -- Filtros para la tabla `productos`
